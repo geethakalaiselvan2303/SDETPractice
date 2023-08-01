@@ -12,8 +12,10 @@ public class Q51_SeleDividingNumber {
 	/**
 	 * 1) Create the list to add the self diving number
 	 * 2) iterate with each number using for loop
-	 * 3) check for the condition rem == 0 and (left % rem) >0
-	 * 4) if true then add the values in the list
+	 * 3) check for the condition if(digit.contains(0)) then ignore 
+	 * 4) check for the condition if(digit<10 && i%i==0) the list.add(digit) 
+	 * 5) if this more than a single digit the use the digit%10=remainder 
+	 * 6) Divide with remainder if it's zero then add the number in the list
 	 */
 	
 	@Test

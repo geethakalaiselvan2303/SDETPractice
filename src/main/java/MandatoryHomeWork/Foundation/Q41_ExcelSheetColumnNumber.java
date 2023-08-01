@@ -9,7 +9,7 @@ public class Q41_ExcelSheetColumnNumber
  {
   	   @Test	
    	   public void test1() {
-   		   excelSheetColumnNumber("ABC");
+   		   excelSheetColumnNumber("AA");
    		 }
 
    	   	public int excelSheetColumnNumber(String st) {
@@ -25,3 +25,5 @@ public class Q41_ExcelSheetColumnNumber
    	 }
    
 }
+
+
