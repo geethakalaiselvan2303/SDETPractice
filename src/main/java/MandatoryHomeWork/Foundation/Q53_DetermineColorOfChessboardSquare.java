@@ -36,7 +36,7 @@ public class Q53_DetermineColorOfChessboardSquare {
 				break;
 			}
 		}
-	return square;
+		return square;
 	}
 	
 
