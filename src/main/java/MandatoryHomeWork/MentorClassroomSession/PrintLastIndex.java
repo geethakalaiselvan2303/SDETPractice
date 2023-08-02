@@ -18,15 +18,15 @@ public class PrintLastIndex {
 	}
 	@Test
 	public void test3() {
-		int PrintLastIndex = PrintLastIndex("010");
-		Assert.assertEquals(1, PrintLastIndex);
+		int PrintLastIndex = PrintLastIndex("0010010");
+		Assert.assertEquals(5, PrintLastIndex);
 	}
 
 	
 	public int PrintLastIndex(String st){
 		char[] ch=st.toCharArray();
 		int[] arr=new int[ch.length];
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = ch.length-1; i>=0; i--) {
 			arr[i]=Character.getNumericValue(ch[i]);
 			if(arr[i]==1) {
 				return i;
