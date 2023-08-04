@@ -20,7 +20,6 @@ public class MissingNumbers {
 
 	
 	public int missingNumber(int[] arr){
-		
 		int value=0;
 		Arrays.sort(arr);
 		for(int i=0;i<arr.length;i++){

@@ -14,20 +14,19 @@ public class MissingNumbers_withoutSorting {
 	
 	@Test
 	public void test1() {
-		int missingNumber = missingNumber(new int[] {1,2,3,5});
-		Assert.assertEquals(4, missingNumber);
+		int missingNumber = missingNumber(new int[] {1,2,3,4});
+		Assert.assertEquals(5, missingNumber);
 	}
-
-	
 	public int missingNumber(int[] arr){
-		int value=0;
-		Arrays.sort(arr);
-		for(int i=0;i<arr.length;i++){
-		if(arr[i]!=i+1){ 
-			value=i+1;
-			break;
+		int n=0,sum=0,result;
+		for (int i = 0; i < arr.length; i++) {
+			sum=sum+arr[i];
+			n++;
 		}
-	}
-		return value;
+		n=n+1;
+		int formula=n*(n+1)/2; 
+		result=formula-sum;
+		System.out.println(result);
+		return result;
 	}
 }
