@@ -14,22 +14,22 @@ public class Q57_SignoftheProductofanArray {
 	 */
 	@Test
 	public void test1() {
-		int signoftheProductofanArray = SignoftheProductofanArray(new int[] {-1,-2,-3,-4,3,2,1});
+		long signoftheProductofanArray = SignoftheProductofanArray(new int[] {100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100});
 		Assert.assertEquals(1, signoftheProductofanArray);
 	}
 	@Test
 	public void test2() {
-		int signoftheProductofanArray = SignoftheProductofanArray(new int[] {1,5,0,2,-3});
+		long signoftheProductofanArray = SignoftheProductofanArray(new int[] {1,5,0,2,-3});
 		Assert.assertEquals(0, signoftheProductofanArray);
 	}
 	@Test
 	public void test3() {
-		int signoftheProductofanArray = SignoftheProductofanArray(new int[] {-1,1,-1,1,-1});
+		long signoftheProductofanArray = SignoftheProductofanArray(new int[] {-1,1,-1,1,-1});
 		Assert.assertEquals(-1, signoftheProductofanArray);
 	}
 	
-	public int SignoftheProductofanArray(int[] arr) {
-		int result=1,re=0;
+	public long SignoftheProductofanArray(int[] arr) {
+		long result=1,re=0;
 		for (int i = 0; i < arr.length; i++) {
 			result=result*arr[i];
 		}
