@@ -30,7 +30,7 @@ public class Q28_NumberofSeniorCitizens_Way2 {
 	public int NumberofSeniorCitizens(String[] str) {
 		int count=0;
 		int age = 0;
-		for (int i = 0; i < str.length; i++) {
+		for (int i = 0; i < str.length; i++) { 
 			age =(str[i].charAt(11)-'0')*10+(str[i].charAt(12)-'0');
 			if(age>60)
 				count++;

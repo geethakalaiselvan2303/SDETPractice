@@ -31,12 +31,12 @@ public class Q10_CountofMatchesTournament {
 		Assert.assertEquals(13, 13);
 	}
 	public int CountofMatches(int team) {
-		int matches=0;
+		int matches=0; //o[1]
 		if(team==1) {
 			return 1;
 		}
 		while(team>1) {
-		if(team%2==0) {
+		if(team%2==0) { 
 			matches = matches +team/2;
 			team=team/2;
 		}

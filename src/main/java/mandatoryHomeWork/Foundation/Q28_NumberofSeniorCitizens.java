@@ -29,9 +29,9 @@ public class Q28_NumberofSeniorCitizens {
 
 	public int NumberofSeniorCitizens(String[] str) {
 		int count=0;
-		for (int i = 0; i < str.length; i++) {
-			String temp = str[i].substring(11, 13);
-			int age = Integer.parseInt(temp);
+		for (int i = 0; i < str.length; i++) { //o[n]
+			String temp = str[i].substring(11, 13); // o[1]
+			int age = Integer.parseInt(temp); // o[1]
 			if(age>60) {
 				count++;
 			}

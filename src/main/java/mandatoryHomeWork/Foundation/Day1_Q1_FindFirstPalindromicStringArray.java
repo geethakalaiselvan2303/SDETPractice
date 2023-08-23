@@ -25,10 +25,10 @@ public class Day1_Q1_FindFirstPalindromicStringArray {
 		Assert.assertEquals("", findFirstPalindromicString);
 	}
 	public String FindFirstPalindromicString(String[] str) {
-		String actual="";
-		for (String s1 : str) {
-	       String[] splitArray = s1.split(",");
-	       for (String s2 : str) {
+		String actual="";  //o[1]
+		for (String s1 : str) { //o[n]
+	       String[] splitArray = s1.split(","); //o[n]
+	       for (String s2 : str) { 
 	    	   if(isPalindrome(s2)) { 
 	    		  actual=s2;
 	    		  break;

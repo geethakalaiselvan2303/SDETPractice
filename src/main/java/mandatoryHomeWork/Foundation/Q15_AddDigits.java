@@ -29,14 +29,14 @@ public class Q15_AddDigits {
 
 	public int addNumber(int num) {
 		int n;
-		 while(num>9) {
+		 while(num>9) { 
 			 int sum=0;
-			while(num!=0) {
+			while(num!=0) { //o[1]
 				n=num%10;
 				sum=sum+n;
 				num=num/10;
 			}
-			num=sum;
+			num=sum; // o[1]
 		 }
 		 System.out.println(num);
 		return num;

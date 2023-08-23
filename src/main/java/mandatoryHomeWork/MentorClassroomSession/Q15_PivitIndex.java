@@ -28,7 +28,7 @@ public class Q15_PivitIndex {
 		{
 		right=right-arr[i];
 		if(left==right){
-			pivot=i;
+			return i;
 		}
 		left=left+arr[i];
 		

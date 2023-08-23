@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+
 
 public class Day2 {
 
@@ -28,7 +30,7 @@ public class Day2 {
 	public void day2() {
 			ChromeOptions option  = new ChromeOptions();
 			option.addArguments("--disable-notifications");
-		    ChromeDriver driver=new ChromeDriver(option);
+		    WebDriver driver=new ChromeDriver(option);
 	        driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	        driver.get("https://login.salesforce.com/");
