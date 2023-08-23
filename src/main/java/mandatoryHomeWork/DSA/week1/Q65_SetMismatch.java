@@ -1,6 +1,10 @@
 package mandatoryHomeWork.DSA.week1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import org.junit.Test;
 
@@ -19,28 +23,32 @@ public class Q65_SetMismatch {
 	}
 	 
 	public int[] setMismatch(int[] nums) {
-		int[] empty = new int[2];
-	    Arrays.sort(nums);
-	    
-	    int duplicate = -1;
-	    int missing = 1;
-	    
-	    for (int i = 1; i < nums.length; i++) { //o[n]
-	        if (nums[i] == nums[i - 1]) {
-	            duplicate = nums[i];
-	        } else if (nums[i] > nums[i - 1] + 1) {
-	            missing = nums[i - 1] + 1;
-	        }
-	    }
-	    
-	    if (nums[nums.length - 1] != nums.length) {
-	        missing = nums.length;
-	    }
-	    
-	    empty[0] = duplicate;
-	    empty[1] = missing;
-	    
-	    return empty;
+		Arrays.sort(nums);  //nlogn
+		int[] newArr=new int[nums.length];
+		int[] result=new int[2];
+		int newArrSum=0,AnrArrSum=0;
+		for (int i = 0; i < nums.length; i++) { //o[n]
+			newArr[i]=i+1;  
+			newArrSum=newArrSum+newArr[i];
+		}
+		Set<Integer> set = new HashSet<>();  
+		for (int i = 0; i <nums.length; i++) { //o[n]
+			set.add(nums[i]);
+		}
+		
+		List<Integer> list=new ArrayList<Integer>(set); 
+		for (int i = 0; i < set.size(); i++) { //o[n]
+			AnrArrSum=AnrArrSum+list.get(i);
+		}
+				
+		for (int i = 1; i < nums.length; i++) { //o[n]
+		    if (nums[i] == nums[i - 1]) {
+		        result[0] = nums[i];
+		}
+		result[1] =newArrSum-AnrArrSum;
+		
+	}
+		return result;
 
 
 	}
