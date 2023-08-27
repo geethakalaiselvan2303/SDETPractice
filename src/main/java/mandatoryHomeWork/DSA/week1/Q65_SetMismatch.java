@@ -19,35 +19,27 @@ public class Q65_SetMismatch {
 	
 	@Test
 	public void test1() {
-		System.out.println(Arrays.toString(setMismatch(new int[] {2,2})));
+		System.out.println(Arrays.toString(setMismatch(new int[] {1,2,2,4})));
 	}
 	 
 	public int[] setMismatch(int[] nums) {
-		Arrays.sort(nums);  //nlogn
-		int[] newArr=new int[nums.length];
+		Arrays.sort(nums);  
+		int add1=0;
 		int[] result=new int[2];
-		int newArrSum=0,AnrArrSum=0;
-		for (int i = 0; i < nums.length; i++) { //o[n]
-			newArr[i]=i+1;  
-			newArrSum=newArrSum+newArr[i];
+		for (int i = 0; i < nums.length-1; i++) {
+			if(nums[i]==nums[i+1]) {
+				result[0]=nums[i];
+			}
 		}
-		Set<Integer> set = new HashSet<>();  
-		for (int i = 0; i <nums.length; i++) { //o[n]
-			set.add(nums[i]);
+		Set<Integer> set=new HashSet<Integer>();
+		for(int sum:nums) {
+			set.add(sum);
 		}
-		
-		List<Integer> list=new ArrayList<Integer>(set); 
-		for (int i = 0; i < set.size(); i++) { //o[n]
-			AnrArrSum=AnrArrSum+list.get(i);
-		}
-				
-		for (int i = 1; i < nums.length; i++) { //o[n]
-		    if (nums[i] == nums[i - 1]) {
-		        result[0] = nums[i];
-		}
-		result[1] =newArrSum-AnrArrSum;
-		
-	}
+		 for (int num : set) {
+	            add1 += num;
+	        }
+		int add2=nums.length*(nums.length+1)/2;
+		result[1] =add2-add1;
 		return result;
 
 
