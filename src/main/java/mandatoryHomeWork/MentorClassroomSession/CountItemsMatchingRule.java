@@ -43,16 +43,19 @@ public class CountItemsMatchingRule {
 
 
 	public int CountItemsMatchingRule(List<String[]> list, String ruleKey, String ruleValue) {
-		int count=0;
+		 String type="type";
+         String color="color";
+         String name="name";
+         int count=0;
 		for (int i = 0; i < list.size(); i++) {
 			String[] eachlist = list.get(i);
-			if(ruleKey=="type" && eachlist[0]==ruleValue) {
+			if(ruleKey.equals(type) && eachlist[0].equals(ruleValue)) {
 					count++;
 				}
-				else if(ruleKey=="color" && eachlist[1]==ruleValue) {
+				else if(ruleKey.equals(color) && eachlist[1].equals(ruleValue)) {
 					count++;
 				}
-				else if(ruleKey=="name" && eachlist[2]==ruleValue) {
+				else if(ruleKey.equals(name) && eachlist[2].equals(ruleValue)) {
 						count++;
 					}
 				
