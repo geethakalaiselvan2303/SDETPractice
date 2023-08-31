@@ -1,5 +1,6 @@
 package mandatoryHomeWork.MentorClassroomSession;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,37 +26,32 @@ public class CountItemsMatchingRule {
 	
 	@Test
 	public void test1() {
-		CountItemsMatchingRule(Arrays.asList(
-							//type,color,name
-			    new String[]{"phone", "blue", "pixel"},
-			    new String[]{"computer", "silver", "lenovo"},
-			    new String[]{"phone", "gold", "iphone"}
-			),"color","silver");}
+	List<List<String>> items = new ArrayList<>();
+    items.add(0, Arrays.asList("phone","blue","pixel"));
+    items.add(1, Arrays.asList("computer","silver","lenovo"));
+    items.add(2, Arrays.asList("phone","gold","iphone"));
+
+}
 	
 	@Test
 	public void test2() {
-		CountItemsMatchingRule(Arrays.asList(
-							//type,color,name
-			    new String[]{"phone","blue","pixel"},
-			    new String[]{"computer","silver","phone"},
-			    new String[]{"phone", "gold", "iphone"}
-			),"type","phone");}
+		List<List<String>> items = new ArrayList<>();
+        items.add(0, Arrays.asList("phone","blue","pixel"));
+        items.add(1, Arrays.asList("computer","silver","lenovo"));
+        items.add(2, Arrays.asList("phone","gold","iphone"));
+        
+	}
 
-
-	public int CountItemsMatchingRule(List<String[]> list, String ruleKey, String ruleValue) {
-		 String type="type";
-         String color="color";
-         String name="name";
-         int count=0;
+	public int CountItemsMatchingRule(List<List<String>> list, String ruleKey, String ruleValue) {
+		int count=0;
 		for (int i = 0; i < list.size(); i++) {
-			String[] eachlist = list.get(i);
-			if(ruleKey.equals(type) && eachlist[0].equals(ruleValue)) {
+			if(ruleKey.equals("type") &&list.get(i).get(0).equals(ruleValue)) {
 					count++;
 				}
-				else if(ruleKey.equals(color) && eachlist[1].equals(ruleValue)) {
+				else if(ruleKey.equals("color") && list.get(i).get(1).equals(ruleValue)) {
 					count++;
 				}
-				else if(ruleKey.equals(name) && eachlist[2].equals(ruleValue)) {
+				else if(ruleKey.equals("name") && list.get(i).get(2).equals(ruleValue)) {
 						count++;
 					}
 				
@@ -66,4 +62,6 @@ public class CountItemsMatchingRule {
 		System.out.println(count);	
 		return count;
 
-	}}
+	}
+}
+
