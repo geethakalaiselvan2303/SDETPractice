@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 public class Q51_SeleDividingNumber {
 	
-	/**
+	/** https://leetcode.com/problems/self-dividing-numbers/
 	 * 1) Create the list to add the self diving number
 	 * 2) iterate with each number using for loop
 	 * 3) check for the condition if(digit.contains(0)) then ignore 

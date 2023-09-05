@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 public class Q22_ShuffleString {
 
-	/**
+	/** https://leetcode.com/problems/shuffle-string/description/
 	 * 1) Input string(s) and integer array in[]
 	 * 2) output string
 	 * 3) convert the s to character array

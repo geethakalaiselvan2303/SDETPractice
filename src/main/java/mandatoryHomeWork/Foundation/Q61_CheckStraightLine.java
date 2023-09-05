@@ -12,7 +12,7 @@ public class Q61_CheckStraightLine {
 	public void test1() {
 		CheckStraightLine(new int[][] {{1, 2},{2, 3},{3, 4},{4, 5},{5, 6},{6, 7}});
 	}
-	
+	// https://leetcode.com/problems/check-if-it-is-a-straight-line
 	/*Pseudo Code 
 	 
 	 Hint from Internet is - Formula for straight line => {y= mx+c} x,y are point coordinates ; m is slope ; c constant

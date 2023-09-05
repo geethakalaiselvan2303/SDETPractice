@@ -12,6 +12,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class Q4_NumberOfOccurance {
+	
 	@Test
 	public void test1() {
 		boolean occurances = occurances(new int[] {1,2,2,1,1,3});
