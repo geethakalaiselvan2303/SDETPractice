@@ -12,6 +12,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class Q1_NumberOfOccurance {
+	/*	Given a sorted array arr[] and a number x, write a function that counts the occurrences of x in arr[].
+		arr[] = {1, 1, 2, 2, 2, 2, 3}   x = 2
+		output = 4
+	 */
 	@Test
 	public void test1() {
 		boolean occurances = occurances(new int[] {1,2,2,1,1,3});

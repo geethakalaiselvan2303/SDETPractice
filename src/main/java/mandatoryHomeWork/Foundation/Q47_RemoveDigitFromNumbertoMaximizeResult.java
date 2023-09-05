@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class Q47_RemoveDigitFromNumbertoMaximizeResult
+// https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/description/
  {
   @Test
   public void test1() {

@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class Q3_FindDuplicates {
 	
-	/**
+	/** https://leetcode.com/problems/contains-duplicate/description/
 	 *  1) Input int [] and find number x
 	 *  2) output int
 	 *  3) data set--> {1, 1, 2, 2, 2, 2, 3}-->2,{-1,-1,0,2,3,4,}-->-1,{1,2,3,4}--> x=0

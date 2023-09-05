@@ -10,7 +10,8 @@ import org.junit.Test;
 
 public class Q65_SetMismatch {
 	
-	/*  1. Declare the empty array with size as 2
+	/* 	https://leetcode.com/problems/set-mismatch/
+	 *  1. Declare the empty array with size as 2
 		2. Sort the given array
 		3. Iterate with array and check for the condition 1 and i+1 are equal
 		4. If equal the add the duplicate value in the empty array

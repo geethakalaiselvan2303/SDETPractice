@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class Q11_Palindrome {
 	/***
+	 * https://leetcode.com/problems/palindrome-number/description/
 	 *   pal=0
 	 *   n=121
 	 *   n=121/10 ==> 12

@@ -8,7 +8,7 @@ import java.util.Arrays;
 //import org.juit.Assert;
 
 public class Q8_TwoSum {
-	
+	// https://leetcode.com/problems/two-sum/description/
 	 @Test
 	    public void test1() {
 	        int[] twoSumIndex = twoSumIndex(new int[]{2, 7, 11, 15}, 9);

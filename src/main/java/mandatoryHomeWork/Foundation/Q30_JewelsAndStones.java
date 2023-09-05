@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class Q30_JewelsAndStones {
-   
+   // https://leetcode.com/problems/jewels-and-stones/description/
 	@Test
 	public void test1() {
 		int jewelsAndStones = jewelsAndStones("aA","aAAbbbb");

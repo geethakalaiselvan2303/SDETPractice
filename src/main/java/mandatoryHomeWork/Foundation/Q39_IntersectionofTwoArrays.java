@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 public class Q39_IntersectionofTwoArrays {
 	
-	/**
+	/**  https://leetcode.com/problems/intersection-of-two-arrays/description/
 	 * 1) create 2 loop i is for num1 and j for num2
 	 * 2) check the condition num1[i]==num2[j] then return the num1[i]
 	 * 3) create a list and add the value in the list

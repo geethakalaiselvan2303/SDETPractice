@@ -7,6 +7,7 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class Q24_FindFirstPalindromicStringArray {
+	//https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/
 	@Test
 	public void test1() {
 		String findFirstPalindromicString = FindFirstPalindromicString(new String[] {"abc","car","ada","racecar","cool"});

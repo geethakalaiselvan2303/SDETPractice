@@ -6,6 +6,10 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
+/*	https://leetcode.com/problems/find-first-palindromic-string-in-the-array/
+ * 
+ */
+	
 public class Day1_Q1_FindFirstPalindromicStringArray {
 	@Test
 	public void test1() {

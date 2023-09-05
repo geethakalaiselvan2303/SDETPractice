@@ -8,7 +8,8 @@ import org.junit.Test;
 
 public class Q67_SummaryRanges {
 	
-	/*  nums = [0,2,3,4,6,8,9] ["0","2->4","6","8->9"]
+	/*  https://leetcode.com/problems/summary-ranges/
+	 * nums = [0,2,3,4,6,8,9] ["0","2->4","6","8->9"]
 		1. Declare the arraylist
 		1. Iterate with nums 
 		2. Store the first index value in left 

@@ -6,7 +6,8 @@ import org.junit.Test;
 
 public class Q66_ArrayPartition {
 	
-	/* 1. Sort the array and declare the variable maxSum=0
+	/* https://leetcode.com/problems/array-partition/
+	 * 1. Sort the array and declare the variable maxSum=0
 	 * 2. check for the condition whether the index value mod 2 not equal to zero
 	 * 3. if yes add the arr value + maxSum
 	 * 4. return sum

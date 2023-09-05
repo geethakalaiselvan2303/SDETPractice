@@ -1,11 +1,14 @@
 package mandatoryHomeWork.DSA.week1;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 import org.testng.Assert;
 
 public class Q68_AssignCookies {
 	
-	/* 1. g = [1,2,3], s = [1,1]
+	/* https://leetcode.com/problems/assign-cookies/
+	 * 1. g = [1,2,3], s = [1,1]
 	 * 1. Declare happyChild=0, 
 	 * 2. Get the length of s and g then find the mininum  
 	 * 3. iterate with loop with i<min 
@@ -17,7 +20,7 @@ public class Q68_AssignCookies {
 	
 	@Test
 	public void test1() {
-		int assignCookies = assignCookies(new int[] {1,2,3},new int[] {1,1});
+		int assignCookies = assignCookies(new int[] {1,2,4},new int[] {1,1});
 		Assert.assertEquals(1, assignCookies);
 	}
 	
@@ -33,7 +36,7 @@ public class Q68_AssignCookies {
 		int happyChild=0;
 		for (int j = 0; j < s.length; j++) {
 		for (int i = 0; i < g.length; i++) {
-			if(s[j]>=g[i] && g[i]>0 ) {
+			if(s[j]>=g[i] ) {
 				happyChild++;
 				g[i]=0;
 				break;

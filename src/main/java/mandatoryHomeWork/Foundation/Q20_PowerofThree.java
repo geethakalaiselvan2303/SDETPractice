@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class Q20_PowerofThree {
-
+//https://leetcode.com/problems/power-of-three/description/
 	@Test
 	public void test1() {
 	 isPalindrome("A man, a plan, a canal: Panama");

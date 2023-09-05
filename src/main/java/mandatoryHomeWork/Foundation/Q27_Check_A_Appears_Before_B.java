@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class Q27_Check_A_Appears_Before_B {
 	
-	/*
+	/*  https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/description/
 	 * input -> String Op -> Boolean Constrain --> a should appears only before b
 	 * 
 	 * --- TD: s = "aaabbb" / True s = "abab" / False

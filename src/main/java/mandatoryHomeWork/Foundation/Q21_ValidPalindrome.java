@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class Q21_ValidPalindrome {
-	
+	// https://leetcode.com/problems/valid-palindrome/description/
 	@Test
 	public void test1() {
 		boolean ispalindrome = ispalindrome("A man, a plan, a canal: Panama");

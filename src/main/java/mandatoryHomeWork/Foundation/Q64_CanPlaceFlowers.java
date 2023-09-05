@@ -2,7 +2,10 @@ package mandatoryHomeWork.Foundation;
 
 import org.junit.Test;
 
-public class Q65_CanPlaceFlowers {
+public class Q64_CanPlaceFlowers {
+	
+	/*	https://leetcode.com/problems/can-place-flowers/
+	 */
 
 	@Test
 	public void test1() {

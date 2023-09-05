@@ -13,7 +13,7 @@ import java.util.Set;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
+/** https://leetcode.com/problems/distribute-candies/description/
  * 1) Input int array
  * 2) output int
  * 3) initialize eatcandies=0 totalCandiesperday=array.length/2

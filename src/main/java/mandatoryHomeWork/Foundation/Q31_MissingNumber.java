@@ -8,7 +8,8 @@ import junit.framework.Assert;
 
 public class Q31_MissingNumber {
 	
-	/** 	{3,0,1}
+	/** 	https://leetcode.com/problems/missing-number/description/
+	 * {3,0,1}
 	 * 1)  Declare the variable as num=0
 	 * 2) input -->int arr[] 
 	 * 3) output--> int 

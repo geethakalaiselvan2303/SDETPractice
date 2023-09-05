@@ -9,7 +9,7 @@ import org.apache.commons.collections4.map.HashedMap;
 import org.junit.Test;
 
 public class Q62_DayoftheWeek {
-	
+	// https://leetcode.com/problems/day-of-the-week/
 	/* 3.Get the totaldays count for previous month to given date using lengthOfMonth()
 	4. Check for the leap year or not
 	5. if leap year the days=366-totaldays

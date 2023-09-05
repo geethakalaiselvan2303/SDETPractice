@@ -5,6 +5,7 @@ import org.testng.Assert;
 
 public class Q34_FindPivotIndex {
 	
+	// https://leetcode.com/problems/find-pivot-index/description/ 
 	@Test()
 	public void test1() {
 		int findPivotIndex = findPivotIndex(new int[] {1,7,3,6,5,6});

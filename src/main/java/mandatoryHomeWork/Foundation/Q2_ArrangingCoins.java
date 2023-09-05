@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class Q2_ArrangingCoins {
 	
-	/**
+	/** https://leetcode.com/problems/arranging-coins/description/
 	 *  https://leetcode.com/problems/arranging-coins/description/
 	 *  1) Input int  take the coins n=8
 	 *  2) output int

@@ -4,7 +4,12 @@ import org.junit.Test;
 
 public class Q63_SpyNumber {
 	
-	/*	n=123
+	/*	Find the number is spy number. A number whose sum of the digits are equal to the product of the digit is 
+	called spy number eg:sum of digit=1+2+3=6
+					 product of digit=1*2*3=6
+	 * 
+	 * 
+	 * n=123
 		1. Declare the variable sum=0 and product=1
 		2. check for the condition whether n>0
 		3. use mod to get the remainder for the n

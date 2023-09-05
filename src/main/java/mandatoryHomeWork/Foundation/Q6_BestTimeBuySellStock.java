@@ -16,10 +16,10 @@ public class Q6_BestTimeBuySellStock {
 		int maxprofit=0;
 		int buy=prices[0];
 		for (int i = 0; i < prices.length; i++) {
-			if(buy>prices[i]) {
-				buy=prices[i];
+			if(buy>prices[i]) { 
+				buy=prices[i]; 
 			}
-			else if(prices[i]-buy>maxprofit){
+			else if(prices[i]-buy>maxprofit){ 
 				maxprofit=prices[i]-buy;
 			}
 		}

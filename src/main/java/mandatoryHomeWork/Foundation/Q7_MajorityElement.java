@@ -12,7 +12,7 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class Q7_MajorityElement {
-	
+	// https://leetcode.com/problems/majority-element/description/
 	@Test
 	public void text1() {
 		Assert.assertEquals(1, majorityNumber(new int[] {2,1,1,1,1,2,2}));

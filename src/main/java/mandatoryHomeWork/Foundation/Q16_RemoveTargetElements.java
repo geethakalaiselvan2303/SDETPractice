@@ -8,6 +8,18 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class Q16_RemoveTargetElements {
+	/* Remove the target element in the array
+							
+	example 1: input = [2, 3, 3, 4, 5], target=3
+			   output = [2, 4, 5]
+			   explanation: when 3 is removed from input array, 
+							output is [2, 4, 5]
+	
+	example 2: input = [2, 2], target=2
+			   output = []
+			   explanation: when 2 is removed, output would be empty array/	
+	 * 
+	 */
 	@Test
 	public void text1() {
 		List<Integer> deleteTargetElements = deleteTargetElements(new int[] {1,2,2,3,3},1);

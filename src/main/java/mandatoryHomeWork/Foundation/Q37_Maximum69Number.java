@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 public class Q37_Maximum69Number {
 	
-	/**
+	/** https://leetcode.com/problems/maximum-69-number/description/
 	 * 1) convert the int to string
 	 * 2) store it in char[]
 	 * 3) iterate with for loop

@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 public class Q54_ExcelNumbertoTitleConversion {
 	
-	/**
+	/**  https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 	 * if(n>26) Take the remainder and quo the concat both
 	 * else Take only the remainder
 	 * 

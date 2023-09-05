@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class Q5_PrimeNumberOrNot {
+	//Check if the given number is prime or not
 	@Test
 	public void test1() {
 		Assert.assertEquals(true, findprime(17));

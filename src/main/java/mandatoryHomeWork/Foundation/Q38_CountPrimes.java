@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 public class Q38_CountPrimes {
 	
-	/**
+	/** https://leetcode.com/problems/count-primes/description/
 	 * 1) count=0
 	 * 2) create the boolean prime variable is true
 	 * 3) iterate with 2 for loop i an j
@@ -31,9 +31,9 @@ public class Q38_CountPrimes {
 
 	public int countPrimes(int n) {
 		int count=0;
-		for (int i = 2; i<n; i++) {
+		for (int i = 2; i<n; i++) { //3
 			boolean prime=true;
-			for (int j = 2; j <i; j++) {
+			for (int j = 2; j <i; j++) { 
 				if(i%j==0) {
 					prime=false;
 					break;

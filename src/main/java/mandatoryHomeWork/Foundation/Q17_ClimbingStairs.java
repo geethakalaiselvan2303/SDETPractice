@@ -2,7 +2,7 @@ package mandatoryHomeWork.Foundation;
 
 public class Q17_ClimbingStairs {
 	
-/**
+/** https://leetcode.com/problems/climbing-stairs/
  * No of step=5;
 	From 0th to 1st step==> 1 way
 	come to 1th steps==> 1 way

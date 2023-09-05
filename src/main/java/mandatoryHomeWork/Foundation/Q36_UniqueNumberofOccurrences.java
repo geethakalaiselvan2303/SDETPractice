@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 public class Q36_UniqueNumberofOccurrences {
 	
-	/**
+	/** https://leetcode.com/problems/unique-number-of-occurrences/description/
 	 * 1)convert to map and have the key and value pairs
 	 * 2) Get the value also 
 	 * 3) put in set

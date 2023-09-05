@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class Q41_ExcelSheetColumnNumber
 
- /**
+ /**	https://leetcode.com/problems/excel-sheet-column-number/description/
 	 * 1. Spilt the string into character array
 	 * 2. Iterate through the char[]
 	 * 3. use for the position of the each string with the power of 26

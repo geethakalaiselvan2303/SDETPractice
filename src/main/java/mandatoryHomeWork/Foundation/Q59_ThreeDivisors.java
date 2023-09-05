@@ -3,7 +3,7 @@ package mandatoryHomeWork.Foundation;
 import org.junit.Test;
 
 public class Q59_ThreeDivisors {
-
+// https://leetcode.com/problems/three-divisors/
 	@Test
 	public void test1() {
 		divisorcountThree(10);

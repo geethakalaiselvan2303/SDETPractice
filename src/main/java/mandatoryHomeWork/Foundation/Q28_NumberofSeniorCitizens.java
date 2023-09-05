@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 public class Q28_NumberofSeniorCitizens {
 	
-	/***
+	/*** https://leetcode.com/problems/number-of-senior-citizens/description/
 	 * assign count=0variable
 	 *  1) Iterate with each indices and get the age using substring
 	 *  2) convert the string into integer(age)

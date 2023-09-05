@@ -6,7 +6,7 @@ import org.testng.Assert;
 public class Q10_CountofMatchesTournament {
 	
 	
-	/**
+	/** https://leetcode.com/problems/count-of-matches-in-tournament/description/
 	 * //*int matches =0;
 	//** 1 input as int 
 	//** 2 output as int

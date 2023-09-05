@@ -3,7 +3,7 @@ package mandatoryHomeWork.Foundation;
 import org.junit.Test;
 
 public class Q26_LengthofLastWord_Way2 {
-	/***
+	/***  https://leetcode.com/problems/length-of-last-word/
 	 * 1) remove space using trim
 	 * 2) use substring to print and count the last world
 	 * 3) and use the last index of method to find the last space

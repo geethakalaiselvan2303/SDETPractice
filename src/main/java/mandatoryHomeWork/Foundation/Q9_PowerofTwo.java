@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 public class Q9_PowerofTwo {
 	
-	/**
+	/**  https://leetcode.com/problems/power-of-two/description/
 	 *  
 	 */
 	@Test

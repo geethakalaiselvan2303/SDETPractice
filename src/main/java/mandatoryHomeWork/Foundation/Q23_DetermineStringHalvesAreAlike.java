@@ -5,7 +5,7 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class Q23_DetermineStringHalvesAreAlike {
-	/**
+	/** https://leetcode.com/problems/determine-if-string-halves-are-alike/description/
 	 * 1) input 
 	 */
 	@Test
