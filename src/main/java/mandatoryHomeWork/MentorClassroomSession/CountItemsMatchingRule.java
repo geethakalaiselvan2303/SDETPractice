@@ -58,7 +58,6 @@ public class CountItemsMatchingRule {
 		
 	}
 
-	
 		System.out.println(count);	
 		return count;
 
