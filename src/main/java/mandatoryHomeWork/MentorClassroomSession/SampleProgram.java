@@ -28,8 +28,9 @@ public class SampleProgram {
 			  count++;
 			  i++;
 			}
-			concat=left+"-"+count;
+			concat=left+"->"+count;
 			list1.add(concat);
+			count=1;
 		}
 		System.out.println(list1);
 	}
