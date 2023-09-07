@@ -6,6 +6,5 @@ public class Print0_99 {
 			System.out.println((int)i);
 				}
 		System.out.println(26%26);
-
 	}
 }
