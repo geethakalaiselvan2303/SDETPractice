@@ -1,4 +1,4 @@
-package mandatoryHomeWork.MentorClassroomSession;
+package mandatoryHomeWork.DSA.week1;
 
 import java.util.Arrays;
 
