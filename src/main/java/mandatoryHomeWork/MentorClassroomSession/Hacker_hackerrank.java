@@ -1,4 +1,4 @@
-package mandatoryHomeWork.Foundation;
+package mandatoryHomeWork.MentorClassroomSession;
 
 import java.util.HashSet;
 import java.util.Set;
