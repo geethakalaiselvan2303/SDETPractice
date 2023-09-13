@@ -54,6 +54,6 @@ public class Q72_DecodeMessage {
 		        empty = empty + msg;
 		    }
 		}
-		return empty;
+	return empty;
 }
 }

@@ -6,15 +6,15 @@ import org.testng.Assert;
 public class Q75_FaultyKeyboard {
 	
 	/*   https://leetcode.com/problems/faulty-keyboard/
-	 * Declare the 2 empty string 1 for append and 1 for reverse
+	 *  Declare the 2 empty string 1 for append and 1 for reverse 
 	 *  Iterate with string
 	 *  check the character is 'i'
-		 *  if not 'i' then concat the same with created empty string
-		 *  if is equal to 'i' then reset the rev string 
+		 *  if not 'i' then concat the same with created empty string 
+		 *  else is equal to 'i' then reset the rev string
 		 		*  reverse the string and concat
 	 *   return the concat string
 	 *   
-	 *   Time complexity--->o[n]
+	 *   Time complexity--->o[n]  
 	 *   
 	 */
 
