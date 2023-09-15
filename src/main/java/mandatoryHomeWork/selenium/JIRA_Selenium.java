@@ -1,4 +1,4 @@
-package SeleniumMarathon;
+package mandatoryHomeWork.selenium;
 
 import java.time.Duration;
 
@@ -27,8 +27,5 @@ public class JIRA_Selenium {
 		driver.findElement(By.xpath("//input[@data-test-id='searchfield']")).sendKeys("Automation By Geetha");
 		driver.findElement(By.xpath("(//*[text()='Automation By Geetha'])[2]")).isDisplayed();
 		driver.quit();
-		
-		
-	}
-
+}
 }
