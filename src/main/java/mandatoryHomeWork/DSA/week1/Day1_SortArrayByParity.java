@@ -18,24 +18,26 @@ public class Day1_SortArrayByParity {
 	 *  	d. check for the condition if left and right are even
 	 *  		if yes increment the left and check again
 	 *  3. return the arr
+	 *  
+	 *  Time Complexity-->o[n]
 	 * 
 	 */
 	
-//	@Test
-//	public void test1() {
-//		sortArrayByParity(new int[] {3,1,2,4});
-//	}
+	@Test
+	public void test1() {
+		sortArrayByParity(new int[] {3,1,2,4});
+	}
 	
-//	@Test
-//	public void test2() {
-//		sortArrayByParity(new int[] {-3,1,-2,4});
-//	}
+	@Test
+	public void test2() {
+		sortArrayByParity(new int[] {-3,1,-2,4});
+	}
 	
-//	@Test
-//	public void test3() {
-//		sortArrayByParity(new int[] {});
-//	}
-//	
+	@Test
+	public void test3() {
+		sortArrayByParity(new int[] {});
+	}
+	
 	@Test
 	public void test4() {
 		sortArrayByParity(new int[] {2,4,6,7,5,1});
