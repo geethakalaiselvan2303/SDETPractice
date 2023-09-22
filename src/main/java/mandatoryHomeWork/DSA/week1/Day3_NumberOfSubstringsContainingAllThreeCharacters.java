@@ -1,11 +1,10 @@
 package mandatoryHomeWork.DSA.week1;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.Test;
+import org.testng.Assert;
 
 public class Day3_NumberOfSubstringsContainingAllThreeCharacters {
 	
@@ -18,50 +17,34 @@ public class Day3_NumberOfSubstringsContainingAllThreeCharacters {
 		5. remove the first index and add the last index value. Iterate the still length of the length	
 			Check for the condition whether each stirng have the abc values
 
-	 *   Time Complexity--->
-	 *   Space Complexity--->
+	 *   Time Complexity---> o[n]
+	 *   Space Complexity---> o[n]
 	 */
 	
 	@Test
 	public void test1() {
-		sumberOfSubstringsContainingAllThreeCharacters("abcabc");
+		int sumberOfSubstringsContainingAllThreeCharacters = sumberOfSubstringsContainingAllThreeCharacters("abcabc");
+		Assert.assertEquals(10, sumberOfSubstringsContainingAllThreeCharacters);
 	}
-
-	public void sumberOfSubstringsContainingAllThreeCharacters(String s) {
-		List<Character> list=new ArrayList<Character>();
-		List<Character> list1=new ArrayList<Character>(list);
-		int pointer=0,count=0;
-		while(pointer<3) {
-			list.add(s.charAt(pointer++));
-		}
-		list1.addAll(list);
-		if (isCheck(list)) {
-            count++;
-        }
-		while(pointer<=s.length()) {
-			list.add(s.charAt(pointer++));
-			if (isCheck(list)) {
-	            count++;
-	        }
-			if(pointer==s.length()) {
-				list.clear();
-	            list.addAll(list1);
-	            list.remove(0); 
-	            list.add(s.charAt(list.size()+1));
-				pointer=list.size()+1;
+	public int sumberOfSubstringsContainingAllThreeCharacters(String s) {
+		int[] empty=new int[3];
+		int left=0,right=0,count=0;
+		while(right<s.length()) {
+			empty[s.charAt(right)-'a']++;
+			while(empty[0]>0 && empty[1]>0 && empty[2]>0) {
+				empty[s.charAt(left++)-'a']--;
+				count=count+s.length()-right;
 			}
-			
+			right++;
+		}
+		
+			return count;
 		}
 		
 		
 		
-	}
-
-	public boolean isCheck(List<Character> list) {
-        Set<Character> set = new HashSet<Character>(list);
-        return set.size() == 3;
-    }
-	
 	
 
+	
+	
 }
