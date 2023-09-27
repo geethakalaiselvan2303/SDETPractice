@@ -1,4 +1,4 @@
-	package mandatoryHomeWork.DSA.ClassWork.week2;
+	package mandatoryHomeWork.DSA.week2;
 	
 	import java.util.Arrays;
 	
