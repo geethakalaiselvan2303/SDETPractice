@@ -12,13 +12,15 @@ public class Day4_FindAllAnagramsString {
 	/*  https://leetcode.com/problems/find-all-anagrams-in-a-string/
 	 *  1. initialize the left and right variable
 	 *  2. Declare the integer array with the length of 26
-	 *  3. Iterate with string and store it in char[]
+	 *  3. Iterate with string(s) and store it in char_s[]
+	 *     Iterate with string(p) and store it in char_p[]	
 	 *  4. Take the character based on the length of P
 	 *  5. add the 3 character in the integer array
 	 *  		check for the condition whether each letter in p should be equal to 1
 	 *  		if yes store the corresponding index value in the list 
 	 *  6. decrement the character in the array list when moving to next window
-	 *  7. return the list
+	 *  7. Compare with window char_s[] with char_p[]
+	 *  	if equals take the starting index and added it in the list
 	 *  
 	 *  Time Complexity--->
 	 *  space complexity--> o[n]
