@@ -1,6 +1,6 @@
 package mandatoryHomeWork.DSA.week4;
 
-import mandatoryHomeWork.DSA.ClassWork.week4.ListNode;
+import org.junit.Test;
 
 public class Day1_RemoveValueFromList {
 	
@@ -11,8 +11,7 @@ public class Day1_RemoveValueFromList {
 	     while(head!=null && head.val == val){
 	         head=head.next;
 	     }
-	    
-	          ListNode previousNode=null,currentNode=head;
+	     ListNode previousNode=null,currentNode=head;
 	     while(currentNode!=null){
 	     if(currentNode.val==val){
 	         previousNode.next=currentNode.next;
@@ -20,36 +19,20 @@ public class Day1_RemoveValueFromList {
 	     else{
 	         previousNode=currentNode;
 	     }
-	              currentNode=currentNode.next;
+	       currentNode=currentNode.next;
 
 	     }
 	     
 	     return head;
 	   }
 	
-	public static void printList(ListNode head) {
-		ListNode current = head;
-	        while (current != null) {
-	            System.out.print(current.val + " ");
-	            current = current.next;
-	        }
-	        System.out.println();
-	    }
-		
-	
-	 public static void main(String[] args) {
-	        ListNode head = new ListNode(1);
-	        head.next = new ListNode(2);
-	        head.next.next = new ListNode(6);
-	        head.next.next.next = new ListNode(3);
-	        head.next.next.next.next = new ListNode(4);
-	        head.next.next.next.next.next = new ListNode(6);
+		@Test
+		public void test() {
+			ListNode head = new AddLinkedLsit().add(new int[] { 1, 2, 3, 4, 5, 6, 4 });
+			AddLinkedLsit.printList(head);
+			head = removeElements(head, 4);
+			AddLinkedLsit.printList(head);
+		}
 
-	        Day1_RemoveValueFromList operations = new Day1_RemoveValueFromList();
-	        int valToRemove = 6;
-	        ListNode modifiedHead = operations.removeElements(head, valToRemove);
-	        operations.printList(modifiedHead);
-	    }
-		
-	
-}
+		 
+	}
