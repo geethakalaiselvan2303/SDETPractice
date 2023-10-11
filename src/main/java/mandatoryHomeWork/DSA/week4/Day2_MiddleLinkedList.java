@@ -26,12 +26,8 @@ public class Day2_MiddleLinkedList {
 		for(int i=0;i<size-1;i++) {
 			currentNode=currentNode.next;
 		}
-		while(currentNode!=null) {
-			result=currentNode;
-			break;
-		}
 		
-		return result;
+		return result=currentNode;
 	}
 
 	public int getSizeList(ListNode head) {

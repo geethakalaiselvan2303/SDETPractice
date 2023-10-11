@@ -20,27 +20,27 @@ public class Day2_MergeTwoSortedLists {
 	 */
 	public ListNode mergeTwoList(ListNode head1, ListNode head2) {
 		    ListNode empty = new ListNode(0);
-		    ListNode current = empty;
+		    ListNode newNode = empty;
 
 		    ListNode currentNode1 = head1;
 		    ListNode currentNode2 = head2;
 
 		    while (currentNode1 != null && currentNode2 != null) {
 		        if (currentNode1.val <= currentNode2.val) {
-		            current.next = currentNode1;
+		        	newNode.next = currentNode1;
 		            currentNode1 = currentNode1.next;
 		        } else {
-		            current.next = currentNode2;
+		        	newNode.next = currentNode2;
 		            currentNode2 = currentNode2.next;
 		        }
-		        current = current.next;
+		        newNode = newNode.next;
 		    }
 
 		    // Attach the remaining nodes from either list
 		    if (currentNode1 != null) {
-		        current.next = currentNode1;
+		    	newNode.next = currentNode1;
 		    } else {
-		        current.next = currentNode2;
+		    	newNode.next = currentNode2;
 		    }
 
 		    return empty.next;
