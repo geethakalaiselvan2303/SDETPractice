@@ -18,6 +18,15 @@ public class Day2_MergeTwoSortedLists {
 	 * 6. Return the empty nodes. 
 	 * 
 	 */
+	
+	@Test
+	public void test() {
+		ListNode head1 = new AddLinkedLsit().add(new int[] {1, 2, 4});
+		ListNode head2 = new AddLinkedLsit().add(new int[] {1, 3, 4});
+		ListNode mergeTwoList = mergeTwoList(head1,head2);
+		AddLinkedLsit.printList(mergeTwoList);
+	}
+
 	public ListNode mergeTwoList(ListNode head1, ListNode head2) {
 		    ListNode empty = new ListNode(0);
 		    ListNode newNode = empty;
@@ -46,13 +55,4 @@ public class Day2_MergeTwoSortedLists {
 		    return empty.next;
 		    }
 	   	
-		@Test
-		public void test() {
-			ListNode head1 = new AddLinkedLsit().add(new int[] {1, 2, 4});
-			ListNode head2 = new AddLinkedLsit().add(new int[] {1, 3, 4});
-			ListNode mergeTwoList = mergeTwoList(head1,head2);
-			AddLinkedLsit.printList(mergeTwoList);
-		}
-
-		 
 	}
