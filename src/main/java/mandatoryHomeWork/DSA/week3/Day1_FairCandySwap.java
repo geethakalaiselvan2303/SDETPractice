@@ -1,5 +1,10 @@
 package mandatoryHomeWork.DSA.week3;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import org.junit.Test;
 
 public class Day1_FairCandySwap {
@@ -20,12 +25,29 @@ public class Day1_FairCandySwap {
 	
 	@Test
 	public void test1() {
-		fairCandySwap(new int[] {1,1},new int[] {2,2});
+		fairCandySwap(new int[] {1},new int[] {3,2});
 	}
 
-	public  void fairCandySwap(int[] aliceSizes, int[] bobSizes) {
-	
+	public  int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
 		
+		int aSum = 0, bSum = 0;
+        for (int a : aliceSizes) {
+            aSum += a;
+        }
+
+        Set<Integer> set = new HashSet<>();
+        for (int b : bobSizes) {
+            set.add(b);
+            bSum += b;
+        }
+        int diff = (bSum - aSum) / 2;   //4/2=2
+        for (int a : aliceSizes) { 
+            int targetBobSize = a + diff; //1+2
+            if (set.contains(targetBobSize)) {
+                return new int[]{a, targetBobSize};
+            }
+        }
+        return null; 
 	}
 	
 	
