@@ -74,6 +74,11 @@
     <version>3.1.5</version>
 </dependency>
 
+  	<dependency>
+  		<groupId>javaprogram1</groupId>
+  		<artifactId>javaprogram1</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
 </project>
