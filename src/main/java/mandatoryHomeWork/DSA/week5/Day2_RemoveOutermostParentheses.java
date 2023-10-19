@@ -20,26 +20,27 @@ public class Day2_RemoveOutermostParentheses {
 	@Test
 	public void test1() {
 		String removeOuterParentheses = removeOuterParentheses("(()())(())");
+		System.out.println(removeOuterParentheses);
 	}
 	
 	public String removeOuterParentheses(String s) {
-		int count=0;
-		for (int i = 0; i < s.length(); i++) {
-			char c1=s.charAt(1);
-			if(s.charAt(i)=='(') {
-				count++;
-			}
-			else {
-				count--;
-			}
-			if(count==0) {
-//				s.replace(c1, "");
-			}
-		}
-		return s;			
-				
-			}
-		
-    }
-	
+		int count = 0;
+	    StringBuilder sb = new StringBuilder();
 
+	    for (char c : s.toCharArray()) {
+	        if (c == '(') {
+	        	if(count>0) {
+	        		sb.append(c);
+	        	}
+	        	count++;
+	        } 
+	        else if (c == ')') {
+	        	count--;
+	        	if(count>0) {
+	        		sb.append(c);
+	        	}
+	        }
+	     }
+	    return sb.toString();		
+    }
+}
