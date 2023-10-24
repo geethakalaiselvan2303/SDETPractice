@@ -1,4 +1,4 @@
-package mandatoryHomeWork.DSA.ClassWork.week4;
+package mandatoryHomeWork.DSA.ClassWork.week5;
 
 public class DoubleListNode {
 	int val;

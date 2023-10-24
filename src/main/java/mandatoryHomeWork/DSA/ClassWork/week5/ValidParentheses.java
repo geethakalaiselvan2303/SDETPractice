@@ -1,4 +1,4 @@
-package mandatoryHomeWork.DSA.ClassWork.week4;
+package mandatoryHomeWork.DSA.ClassWork.week5;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,7 @@ public class ValidParentheses {
 	 * https://leetcode.com/problems/valid-parentheses/ 1. Use a stack of
 	 * characters.
 	 * 
+	 * 
 	 */
 
 	@Test
@@ -19,7 +20,7 @@ public class ValidParentheses {
 		System.out.println(isValid("()[]{}"));
 	}
 
-	public boolean isValid(String s) {
+	public boolean isValid(String s) { 
 		Stack<Character> stack = new Stack<>();
 		for (char eachChar : s.toCharArray()) {
 			switch (eachChar) {
@@ -28,7 +29,7 @@ public class ValidParentheses {
 					return false;
 				break;
 			case ')':
-				if (stack.isEmpty() || stack.pop() != '(')
+				if (stack.isEmpty() || stack.pop() != '(') 
 					return false;
 				break;
 			case ']':
@@ -36,7 +37,7 @@ public class ValidParentheses {
 					return false;
 				break;
 			default:
-				stack.push(eachChar);
+				stack.push(eachChar); 
 			}
 
 		}

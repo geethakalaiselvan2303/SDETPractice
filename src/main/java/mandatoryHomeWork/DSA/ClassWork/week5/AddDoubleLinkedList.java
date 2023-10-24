@@ -1,6 +1,6 @@
-package mandatoryHomeWork.DSA.ClassWork.week4;
+package mandatoryHomeWork.DSA.ClassWork.week5;
 
-import mandatoryHomeWork.DSA.ClassWork.week4.DoubleListNode;
+import mandatoryHomeWork.DSA.ClassWork.week5.DoubleListNode;
 import mandatoryHomeWork.DSA.week4.ListNode;
 
 public class AddDoubleLinkedList {

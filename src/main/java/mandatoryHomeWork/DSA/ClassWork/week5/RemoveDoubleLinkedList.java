@@ -1,4 +1,4 @@
-package mandatoryHomeWork.DSA.ClassWork.week4;
+package mandatoryHomeWork.DSA.ClassWork.week5;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package mandatoryHomeWork.DSA.ClassWork.week4;
+package mandatoryHomeWork.DSA.ClassWork.week5;
 
 import java.util.LinkedList;
 import java.util.Queue;
