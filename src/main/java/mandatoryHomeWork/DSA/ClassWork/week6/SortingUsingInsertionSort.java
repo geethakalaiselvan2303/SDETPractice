@@ -6,22 +6,22 @@ public class SortingUsingInsertionSort {
 
 	public static void main(String[] args) {
 
-		int[] n= {5,4,1,8,2,6,0};
-		for (int i = 1; i < n.length; i++) {
-			int j=i-1;
-			while(j >= 0 && n[i] < n[j]) {
-			  if(n[i]<n[j]) {
-				int temp=n[i];
-				n[i]=n[j];
-				n[j]=temp;
-			}
-			  j--;
-			  if(j<i) {
-				  i--;
-			  }
-			}
-		}
-		System.out.println(Arrays.toString(n));
+		int[] arr= {5,4,1,8,2,6,0};
+		 int n = arr.length;
+	        for (int i = 1; i < n; ++i) {
+	            int key = arr[i];
+	            int j = i - 1;
+	              
+	            while (j >= 0 && arr[j] > key) {
+	                arr[j + 1] = arr[j];
+	                j = j - 1;
+	            }
+	            arr[j + 1] = key;
+	        }
+	        System.out.println(Arrays.toString(arr));
+	    	
+	    }
+	
 	}
 
-}
+

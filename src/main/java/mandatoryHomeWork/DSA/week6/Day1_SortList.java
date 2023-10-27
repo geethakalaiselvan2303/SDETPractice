@@ -9,8 +9,13 @@ public class Day1_SortList {
 
 	/*  https://leetcode.com/problems/sort-list/
 	 * 
-	 *  1. Declare the current_i as head.next and current_j as head
-	 *  2. Compare the 
+	  * 1. Create the dummy listNode
+	 * 2. add the node in the head
+	 * 		before adding check for the condition whether dummy node values are lesser than the values which is there in head
+	 * 
+	 * Time complexity--> O[n^2]
+	 * space Complexity-->O[n]
+	 *
 	 * 
 	 */
 	

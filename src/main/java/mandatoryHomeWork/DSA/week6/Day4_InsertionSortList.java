@@ -6,6 +6,12 @@ public class Day4_InsertionSortList {
 	
 	/*
 	 * https://leetcode.com/problems/insertion-sort-list/submissions/
+	 * 1. Create the dummy listNode
+	 * 2. add the node in the head
+	 * 		before adding check for the condition whether dummy node values are lesser than the values which is there in head
+	 * 
+	 * Time complexity--> O[n^2]
+	 * space Complexity-->O[n]
 	 */
 
 	@Test
